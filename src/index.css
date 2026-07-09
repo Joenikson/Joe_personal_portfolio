@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-primary: #2563EB;
+  --color-primary-hover: #1D4ED8;
+  --color-secondary: #3B82F6;
+  --color-bg-light: #F8FAFC;
+  --color-heading: #111827;
+  --color-body: #6B7280;
+  --color-border: #E5E7EB;
+  --color-accent: #0EA5E9;
+  --color-success: #10B981;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  body {
+    background-color: var(--color-bg-light);
+    color: var(--color-body);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+
+  /* Custom Focus Indicator */
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 4px;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Custom styles for active class */
+.nav-link-active {
+  color: var(--color-primary);
+}
+
+.nav-link-active::after {
+  transform: scaleX(1);
+}
+
