@@ -11,8 +11,8 @@ export const portfolioOwner = {
   shortIntro:
     "I specialize in turning complex design visions into elegant, accessible, and performant digital realities. Combining deep analytical technical expertise with creative visual intuition, my work focuses on clean architecture and highly intuitive user experiences.",
 
-   avatar: "/images/joe_photo.jpeg",
-   heroIllustration: "/images/developer_illustration_1783526275736.jpg",
+   avatar: "src/assets/images/joe_photo.jpeg",
+   heroIllustration: "src/assets/images/developer_illustration_1783526275736.jpg",
 
   resumeUrl: "/joe_nikson_resume.pdf",
 
@@ -21,7 +21,7 @@ export const portfolioOwner = {
     linkedin: "https://linkedin.com",
     twitter: "https://twitter.com",
     email: "joenikson592@gmail.com",
-    phone: "+91 9342584966",
+    phone: "+91 91 2345 6789",
     location: "Kallakurichi, Tamil Nadu",
   },
 
@@ -88,7 +88,7 @@ export const projectsData: Project[] = [
     title: "Smart Subscription Manager",
     description:
       "A subscription tracking platform that helps users avoid unwanted auto-renewal charges from free trials and recurring subscriptions.",
-    image: "/assets/images/fintech_project_1783526291301.jpg",
+    image: "src/assets/images/fintech_project_1783526291301.jpg",
     tags: ["React", "Tailwind CSS", "TypeScript", "D3.js", "Motion"],
     liveUrl: "#",
     githubUrl: "https://github.com",
@@ -98,7 +98,7 @@ export const projectsData: Project[] = [
     title: "NovaAI Content Engineering Workspace",
     description:
       "An intuitive collaborative portal integrating natural language processors for dynamic article summaries, prompt customization layouts, and automated SEO tags generation.",
-    image: "/assets/images/ai_project_1783526304671.jpg",
+    image: "src/assets/images/ai_project_1783526304671.jpg",
     tags: ["React", "Tailwind CSS", "Gemini API", "TypeScript", "Motion"],
     liveUrl: "#",
     githubUrl: "https://github.com",
@@ -108,7 +108,7 @@ export const projectsData: Project[] = [
     title: "ChronoCraft Luxury Watch Atelier",
     description:
       "A highly responsive, custom-styled e-commerce boutique featuring dynamic checkout components, custom micro-interactions, fluid catalog grids, and elegant typography.",
-    image: "/assets/images/ecommerce_project_1783526321475.jpg",
+    image: "src/assets/images/ecommerce_project_1783526321475.jpg",
     tags: ["React", "Tailwind CSS", "State Management", "Framer Motion"],
     liveUrl: "#",
     githubUrl: "https://github.com",
@@ -118,7 +118,7 @@ export const projectsData: Project[] = [
     title: "Synapse Collaborative Kanban Workspace",
     description:
       "A multi-workspace digital kanban board featuring real-time client-side transitions, drag-and-drop feedback, modern progress meters, and color-coded tags.",
-    image: "/assets/images/task_project_1783526335666.jpg",
+    image: "src/assets/images/task_project_1783526335666.jpg",
     tags: ["React", "CSS Grid", "TypeScript", "Motion", "LocalStorage"],
     liveUrl: "#",
     githubUrl: "https://github.com",
