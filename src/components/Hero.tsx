@@ -26,8 +26,8 @@ export default function Hero() {
       {/* Decorative Grid & Shapes */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-30" />
       
-      <div className="absolute top-20 right-[-10%] w-[40rem] h-[40rem] rounded-full bg-blue-100/40 blur-3xl -z-10" />
-      <div className="absolute bottom-10 left-[-5%] w-[30rem] h-[30rem] rounded-full bg-cyan-100/30 blur-3xl -z-10" />
+      <div className="absolute top-20 right-[-10%] w-[40rem] h-[40rem] rounded-full bg-blue-100/40 blur-xl -z-10" />
+      <div className="absolute bottom-10 left-[-5%] w-[30rem] h-[30rem] rounded-full bg-cyan-100/30 blur-xl -z-10" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center relative z-10">
         
@@ -145,18 +145,21 @@ export default function Hero() {
             className="relative w-full max-w-[440px] aspect-square rounded-3xl overflow-hidden shadow-2xl shadow-slate-900/10 border-4 border-white/80 bg-white"
           >
             <img
-              src={portfolioOwner.heroIllustration}
-              alt="Developer Workspace Illustration"
-              referrerPolicy="no-referrer"
-              className="w-full h-full object-cover select-none"
-              id="hero-illustration-img"
+               src={portfolioOwner.heroIllustration}
+               alt="Developer Workspace Illustration"
+               loading="eager"
+               decoding="async"
+               fetchPriority="high"
+               referrerPolicy="no-referrer"
+               className="w-full h-full object-cover select-none"
+                id="hero-illustration-img"
             />
           </motion.div>
 
           {/* Floating Accents */}
           <motion.div
             animate={{ y: [0, -12, 0] }}
-            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+            transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
             className="absolute top-12 left-[-16px] md:left-[-32px] bg-white p-4 rounded-2xl shadow-xl shadow-slate-900/5 border border-gray-100 flex items-center gap-3 select-none"
             id="hero-floating-badge-1"
           >
@@ -171,7 +174,7 @@ export default function Hero() {
 
           <motion.div
             animate={{ y: [0, 12, 0] }}
-            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+            transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
             className="absolute bottom-12 right-[-16px] md:right-[-32px] bg-white p-4 rounded-2xl shadow-xl shadow-slate-900/5 border border-gray-100 flex items-center gap-3 select-none"
             id="hero-floating-badge-2"
           >
