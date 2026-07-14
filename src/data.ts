@@ -124,3 +124,64 @@ export const projectsData: Project[] = [
     githubUrl: "https://github.com",
   },
 ];
+export const timelineData: TimelineItem[] = [
+  {
+    id: "t-1",
+    year: "2024 - Present",
+    title: "Lead Frontend Engineer",
+    subtitle: "PixelCraft Interactive",
+    description:
+      "Architecting high-performance client portals and building responsive interfaces using React.",
+    type: "internship",
+  },
+  {
+    id: "t-2",
+    year: "2025 - 2026",
+    title: "Full Stack Web Development",
+    subtitle: "Litz Tech - Coimbatore",
+    description:
+      "Developed responsive dashboard systems and improved accessibility using React and Tailwind CSS.",
+    type: "internship",
+  },
+  {
+    id: "t-3",
+    year: "2023 - 2027",
+    title: "B.E. Computer Science Engineering",
+    subtitle: "Paavai Engineering College",
+    description:
+      "Currently pursuing Computer Science Engineering.",
+    type: "education",
+  },
+  {
+    id: "t-4",
+    year: "2024",
+    title: "Frontend Development",
+    subtitle: "Infosys Springboard",
+    description:
+      "Completed frontend development certification.",
+    type: "certification",
+  },
+];
+export const servicesData: Service[] = [
+  {
+    id: "s-1",
+    title: "Frontend Development",
+    description:
+      "Building fast, responsive and scalable React applications.",
+    iconName: "Code2",
+  },
+  {
+    id: "s-2",
+    title: "Responsive Web Design",
+    description:
+      "Designing websites that work perfectly across all devices.",
+    iconName: "MonitorPhone",
+  },
+  {
+    id: "s-3",
+    title: "UI/UX Implementation",
+    description:
+      "Creating modern user interfaces with smooth animations and clean layouts.",
+    iconName: "Layers",
+  },
+];
