@@ -1,4 +1,13 @@
 import { Project, Skill, TimelineItem, Service } from './types';
+import avatar from "./assets/images/joe_photo.jpeg";
+import heroIllustration from "./assets/images/developer_illustration_1783526275736.jpg";
+
+import project1 from "./assets/images/fintech_project_1783526291301.jpg";
+import project2 from "./assets/images/ai_project_1783526304671.jpg";
+import project3 from "./assets/images/ecommerce_project_1783526321475.jpg";
+import project4 from "./assets/images/task_project_1783526335666.jpg";
+
+console.log(avatar);
 
 export const portfolioOwner = {
   firstName: "Joe",
@@ -11,8 +20,8 @@ export const portfolioOwner = {
   shortIntro:
     "I specialize in turning complex design visions into elegant, accessible, and performant digital realities. Combining deep analytical technical expertise with creative visual intuition, my work focuses on clean architecture and highly intuitive user experiences.",
 
-   avatar: "src/assets/images/joe_photo.jpeg",
-   heroIllustration: "src/assets/images/developer_illustration_1783526275736.jpg",
+   avatar: avatar,
+   heroIllustration: heroIllustration,
 
   resumeUrl: "/joe_nikson_resume.pdf",
 
@@ -88,7 +97,7 @@ export const projectsData: Project[] = [
     title: "Smart Subscription Manager",
     description:
       "A subscription tracking platform that helps users avoid unwanted auto-renewal charges from free trials and recurring subscriptions.",
-    image: "src/assets/images/fintech_project_1783526291301.jpg",
+    image: project1,
     tags: ["React", "Tailwind CSS", "TypeScript", "D3.js", "Motion"],
     liveUrl: "#",
     githubUrl: "https://github.com",
@@ -98,7 +107,7 @@ export const projectsData: Project[] = [
     title: "NovaAI Content Engineering Workspace",
     description:
       "An intuitive collaborative portal integrating natural language processors for dynamic article summaries, prompt customization layouts, and automated SEO tags generation.",
-    image: "src/assets/images/ai_project_1783526304671.jpg",
+    image: project2,
     tags: ["React", "Tailwind CSS", "Gemini API", "TypeScript", "Motion"],
     liveUrl: "#",
     githubUrl: "https://github.com",
@@ -108,7 +117,7 @@ export const projectsData: Project[] = [
     title: "ChronoCraft Luxury Watch Atelier",
     description:
       "A highly responsive, custom-styled e-commerce boutique featuring dynamic checkout components, custom micro-interactions, fluid catalog grids, and elegant typography.",
-    image: "src/assets/images/ecommerce_project_1783526321475.jpg",
+    image: project3,
     tags: ["React", "Tailwind CSS", "State Management", "Framer Motion"],
     liveUrl: "#",
     githubUrl: "https://github.com",
@@ -118,7 +127,7 @@ export const projectsData: Project[] = [
     title: "Synapse Collaborative Kanban Workspace",
     description:
       "A multi-workspace digital kanban board featuring real-time client-side transitions, drag-and-drop feedback, modern progress meters, and color-coded tags.",
-    image: "src/assets/images/task_project_1783526335666.jpg",
+    image: project4,
     tags: ["React", "CSS Grid", "TypeScript", "Motion", "LocalStorage"],
     liveUrl: "#",
     githubUrl: "https://github.com",
