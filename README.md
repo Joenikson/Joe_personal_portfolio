@@ -1,20 +1,54 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Joe Nikson: Developer Portfolio (v2)
 
-# Run and deploy your AI Studio app
+My personal portfolio, rebuilt with React, TypeScript and Tailwind CSS. The first version is a plain HTML, CSS and JS site: [simple_portfolio](https://github.com/Joenikson/simple_portfolio).
 
-This contains everything you need to run your app locally.
+<!-- Add your deployed URL and a screenshot here -->
 
-View your app in AI Studio: https://ai.studio/apps/5c58595e-2008-4148-ab8d-8823a40c7a51
+## Sections
 
-## Run Locally
+Hero, About, Services, Projects, Experience and Contact, with scroll animations and a responsive layout.
 
-**Prerequisites:**  Node.js
+## Tech stack
 
+- **Framework:** React 19, TypeScript
+- **Build:** Vite 6
+- **Styling:** Tailwind CSS 4
+- **UI:** Lucide icons, Motion for animation
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Run locally
+
+Prerequisite: Node.js 18 or newer.
+
+```bash
+git clone https://github.com/Joenikson/Joe_personal_portfolio.git
+cd Joe_personal_portfolio
+npm install
+npm run dev
+```
+
+The app runs at `http://localhost:3000`.
+
+## Scripts
+
+| Command | What it does |
+| --- | --- |
+| `npm run dev` | Start the dev server on port 3000 |
+| `npm run build` | Production build |
+| `npm run preview` | Preview the production build |
+| `npm run lint` | Type-check with `tsc --noEmit` |
+
+## Project structure
+
+```
+src/
+├── components/   Navbar, Hero, About, Services, Projects, Experience, Contact, Footer
+├── data.ts       portfolio content (profile, skills, projects, experience)
+├── types.ts      shared TypeScript types
+└── assets/       images
+```
+
+Content lives in `src/data.ts`, so updating the portfolio doesn't require touching components.
+
+## Author
+
+**Joe Nikson**: [GitHub](https://github.com/Joenikson) · [LinkedIn](https://linkedin.com/in/joenikson-j-b0a0032a0)
